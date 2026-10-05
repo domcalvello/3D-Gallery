@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f6f3" />
+    <meta
+      name="description"
+      content="Selected web, brand, music, and interactive work by Domenick Calvello, presented in a reactive 3D gallery."
+    />
+    <title>Selected Work — Domenick Calvello</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#gallery">Skip to work</a>
+
+    <header class="site-header">
+      <a class="brand-link" href="https://domcalvello.github.io/" aria-label="Return to DOM:CLOUD portfolio">
+        <img class="brand-mark" src="assets/domcloud-mark.webp" alt="" />
+        <img class="brand-wordmark" src="assets/domcloud-wordmark.webp" alt="DOM:CLOUD" />
+      </a>
+    </header>
+
+    <main id="gallery" class="gallery-shell">
+      <section
+        class="carousel"
+        data-carousel
+        role="region"
+        aria-roledescription="carousel"
+        aria-label="Selected portfolio work"
+        tabindex="0"
+      >
+        <div class="ambient-field" aria-hidden="true"></div>
+        <div class="scene">
+          <div class="ring" data-ring></div>
+        </div>
+      </section>
+
+      <aside class="project-readout" aria-label="Selected project">
+        <div class="project-copy">
+          <p data-category>Brand experience</p>
+          <h1 data-title>Circus Circus</h1>
+        </div>
+        <div class="project-count" aria-hidden="true">
+          <span data-current>01</span>
+          <span>/</span>
+          <span>16</span>
+        </div>
+      </aside>
+
+      <nav class="carousel-controls" aria-label="Carousel controls">
+        <button type="button" data-previous aria-label="Previous project">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+        </button>
+        <button type="button" data-next aria-label="Next project">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+        </button>
+      </nav>
+
+      <div class="sr-only" aria-live="polite" data-live></div>
+    </main>
+
+    <noscript>
+      <div class="noscript-message">JavaScript is required for the 3D gallery.</div>
+    </noscript>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
